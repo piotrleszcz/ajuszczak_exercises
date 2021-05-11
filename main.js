@@ -1,1 +1,3 @@
-console.log("Hello JavaScript!");
+var input = prompt ('Podaj swoje imię');
+var length = input.length;
+alert(length);
