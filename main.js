@@ -1,21 +1,23 @@
-// var name = prompt('What is your name?');
-// var age = prompt('How old are you?');
+var input = prompt("Give me radius");
+var radius = parseInt(input, 10);
+var area = Math.PI * (radius ** 2);
+var circumference = 2 * Math.PI * radius;
+var output = {area: area, circumference: circumference};
+var json = JSON.stringify(output, null, 8);
+alert(json);
 
-// var data = {
-//   name: name,
-//   age: age,
-// };
 
-// var json = JSON.stringify(data, null, 8);
+
+// var input = prompt("What is the radius?");
+
+// var radius = parseInt(input, 10);
+
+// var area = Math.PI * (radius ** 2);
+
+// var circumference = 2 * Math.PI * radius;
+
+// var output = {area: area, circumference: circumference};
+
+// var json = JSON.stringify(output, null, 8);
 
 // alert(json);
-
-var inputName = prompt ("What's your name?");
-var inputAge = prompt ("How old are you?");
-
-var person = {
-    name: inputName,
-    age: inputAge
-}
-
-console.log(person);
