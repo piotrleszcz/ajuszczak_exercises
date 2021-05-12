@@ -1,23 +1,4 @@
-var input = prompt("Give me radius");
-var radius = parseInt(input, 10);
-var area = Math.PI * (radius ** 2);
-var circumference = 2 * Math.PI * radius;
-var output = {area: area, circumference: circumference};
-var json = JSON.stringify(output, null, 8);
-alert(json);
+var a = parseInt(prompt('Podaj pierwszą wartość'), 10);
+var b = parseInt(prompt('Podaj drugą wartość'), 10);
 
-
-
-// var input = prompt("What is the radius?");
-
-// var radius = parseInt(input, 10);
-
-// var area = Math.PI * (radius ** 2);
-
-// var circumference = 2 * Math.PI * radius;
-
-// var output = {area: area, circumference: circumference};
-
-// var json = JSON.stringify(output, null, 8);
-
-// alert(json);
+alert('suma: ' + (a + b) + '\nróżnica: ' + (a - b) + '\niloczyn: ' + (a * b) + '\niloraz: ' + (a / b));
